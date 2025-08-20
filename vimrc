@@ -1,7 +1,9 @@
 source $VIMRUNTIME/defaults.vim
 map Q gq
 syntax on
+filetype plugin on
 filetype plugin indent on
+set omnifunc=syntaxcomplete#Complete
 set nowrap
 set tabstop=4 
 set shiftwidth=4 
