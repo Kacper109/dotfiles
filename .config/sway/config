@@ -3,14 +3,15 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
-
 ### Border
 #
 smart_borders on
 gaps inner 5
 gaps outer 3
 default_border pixel 3
-
+default_floating_border pixel 3
+titlebar_padding 1
+titlebar_border_thickness 0
 
 ### Variables
 #
@@ -62,7 +63,7 @@ default_border pixel 3
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit' 
 #
 # Moving around:
 #
@@ -176,7 +177,8 @@ mode "resize" {
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
+exec_always pipewire
+
 bar {
     swaybar_command waybar
 }
-
