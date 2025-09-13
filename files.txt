@@ -1,0 +1,7 @@
+$HOME/{.profile,.vimrc,.yashrc}
+$HOME/.config/kitty/{current-theme.conf,kitty.conf}
+$HOME/.config/sway/config
+$HOME/.config/waybar/{config,style.cc}
+etc/{resolv.conf,resolvonf.conf}
+etc/iwd/main.conf
+boot/limine.conf

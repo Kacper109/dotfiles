@@ -1,0 +1,10 @@
+if [ -f /etc/yashrc ]; then
+  . /etc/yashrc
+fi
+
+. --autoload --no-alias initialization/common
+
+if [ -f ~/.profile ]; then
+  . ~/.profile
+fi
+
